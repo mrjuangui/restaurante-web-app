@@ -1,0 +1,123 @@
+.producto-img-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay-descripcion {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.7);
+  color: #fff;
+  padding: 10px;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.producto-img-wrapper:hover .overlay-descripcion {
+  transform: translateY(0);
+}
+
+
+.pulse {
+  animation: pulseScale 0.3s;
+}
+@keyframes pulseScale {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.15); }
+  100% { transform: scale(1); }
+}
+
+
+.producto-card:hover {
+  transform: scale(1.04) !important;
+  transition: transform 0.3s !important;
+  box-shadow: 7px 7px 7px rgba(0,0,0,0.2) !important;
+}
+
+.badge-animar {
+  animation: pop 0.3s ease;
+}
+
+@keyframes pop {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.4); }
+  100% { transform: scale(1); }
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: #ff8000 !important;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+
+.toast-notification {
+  position: fixed;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 12px 20px;
+  background-color: #198754;
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+  z-index: 1000;
+  font-weight: bold;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.toast-notification.error {
+  background-color: #dc3545;
+}
+
+.toast-notification.success {
+  background-color: #198754;
+}
+
+
+
+.compact-card {
+  border-left: 4px solid #0d6efd !important; 
+  background-color: #f9f9f9 !important;
+}
+
+.compact-card table {
+  font-size: 0.9rem !important;
+}
+
+.compact-card .card-body {
+  padding: 1rem 1.25rem !important;
+}
+
+
+.dropdown-item {
+  transition: background-color 0.3s ease, color 0.3s ease !important;
+}
+
+.dropdown-item:hover {
+  background-color: #F29D01 !important;
+  color: white !important;
+}
+
+
+/* Botón de carrito */
+.btn-carrito {
+  background-color: #F29D01 !important;
+  color: white !important;
+  border: none !important;
+  transition: background-color 0.3s ease, transform 0.3s ease !important;
+}
+
+.btn-carrito:hover {
+  background-color: #d48301 !important;
+  transform: scale(1.05) !important;
+}
