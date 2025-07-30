@@ -10,7 +10,7 @@ const AdminRecomendados = () => {
   useEffect(() => {
     const fetchProductos = async () => {
       try {
-        const res = await axios.get("https://restaurante-backend-ilif.onrender.com/api/productos");
+        const res = await axios.get("https://restaurante-web-app-production.up.railway.app/api/productos");
         const productosObtenidos = res.data.productos;
 
         setProductos(productosObtenidos);
@@ -41,7 +41,7 @@ const AdminRecomendados = () => {
 
     try {
       const res = await axios.put(
-        "https://restaurante-backend-ilif.onrender.com/api/productos/recomendados",
+        "https://restaurante-web-app-production.up.railway.app/api/productos/recomendados",
         { ids: recomendados.filter((id) => id !== null) },
         { headers: { Authorization: `Bearer ${token}` } }
       );

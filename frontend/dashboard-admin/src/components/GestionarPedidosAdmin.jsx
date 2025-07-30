@@ -11,7 +11,7 @@ const GestionarPedidosAdmin = () => {
   useEffect(() => {
     const fetchPedidos = async () => {
       try {
-        const res = await axios.get("https://restaurante-backend-ilif.onrender.com/api/pedidos/admin", {
+        const res = await axios.get("https://restaurante-web-app-production.up.railway.app/api/pedidos/admin", {
           headers: { Authorization: `Bearer ${token}` },
         });
         setPedidos(res.data.pedidos);
@@ -31,7 +31,7 @@ const GestionarPedidosAdmin = () => {
     const nuevoEstado = cambiosEstado[pedidoId];
     try {
       await axios.put(
-        `https://restaurante-backend-ilif.onrender.com/api/pedidos/${pedidoId}`,
+        `https://restaurante-web-app-production.up.railway.app/api/pedidos/${pedidoId}`,
         { estado: nuevoEstado },
         { headers: { Authorization: `Bearer ${token}` } }
       );
@@ -52,7 +52,7 @@ const GestionarPedidosAdmin = () => {
   const eliminarPedido = async (pedidoId) => {
     if (!window.confirm("¿Seguro que deseas eliminar este pedido?")) return;
     try {
-      await axios.delete(`https://restaurante-backend-ilif.onrender.com/api/pedidos/${pedidoId}`, {
+      await axios.delete(`https://restaurante-web-app-production.up.railway.app/api/pedidos/${pedidoId}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       setPedidos((prev) => prev.filter((p) => p.pedido_id !== pedidoId));

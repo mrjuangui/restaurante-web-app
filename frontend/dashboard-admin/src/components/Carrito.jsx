@@ -51,7 +51,7 @@ const Carrito = () => {
     }));
 
     try {
-      const res = await fetch("https://restaurante-backend-ilif.onrender.com/api/pedidos", {
+      const res = await fetch("https://restaurante-web-app-production.up.railway.app/api/pedidos", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
