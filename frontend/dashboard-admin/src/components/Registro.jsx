@@ -12,7 +12,7 @@ const Registro = ({ onRegistrado, setMensaje, setTipo }) => {
     e.preventDefault();
 
     try {
-      const res = await fetch("http://localhost:3000/api/auth/registrar", {
+      const res = await fetch("https://restaurante-backend-ilif.onrender.com/api/auth/registrar", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ nombre, correo, clave }),
@@ -22,7 +22,7 @@ const Registro = ({ onRegistrado, setMensaje, setTipo }) => {
 
       // Si la respuesta es exitosa, guardamos el token y los datos del usuario
       if (res.ok) {
-        const loginRes = await fetch("http://localhost:3000/api/auth/iniciar-sesion", {
+        const loginRes = await fetch("https://restaurante-backend-ilif.onrender.com/api/auth/iniciar-sesion", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ correo, clave }),

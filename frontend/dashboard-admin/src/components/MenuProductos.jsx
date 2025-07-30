@@ -22,7 +22,7 @@ const iconosCategoria = {
   useEffect(() => {
     const fetchProductos = async () => {
       try {
-        const { data } = await axios.get("http://localhost:3000/api/productos");
+        const { data } = await axios.get("https://restaurante-backend-ilif.onrender.com/api/productos");
         setProductos(data.productos);
       } catch (error) {
         console.error("Error al cargar productos:", error);

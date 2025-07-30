@@ -7,7 +7,7 @@ const Perfil = () => {
     const fetchPerfil = async () => {
       const token = JSON.parse(localStorage.getItem("usuario"))?.token;
       try {
-        const res = await fetch("http://localhost:3000/api/usuarios/perfil", {
+        const res = await fetch("https://restaurante-backend-ilif.onrender.com/api/usuarios/perfil", {
           headers: { Authorization: `Bearer ${token}` },
         });
         const data = await res.json();

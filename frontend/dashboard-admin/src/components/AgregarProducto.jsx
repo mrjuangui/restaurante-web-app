@@ -14,7 +14,7 @@ const AgregarProducto = () => {
     const token = localStorage.getItem("token");
 
     try {
-      const res = await fetch("http://localhost:3000/api/productos", {
+      const res = await fetch("https://restaurante-backend-ilif.onrender.com/api/productos", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

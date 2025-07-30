@@ -20,7 +20,7 @@ const Dashboard = ({ onLogout }) => {
   useEffect(() => {
   const fetchData = async () => {
     try {
-      const respuesta = await axios.get("http://localhost:3000/api/admin/dashboard", {
+      const respuesta = await axios.get("https://restaurante-backend-ilif.onrender.com/api/admin/dashboard", {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
         },

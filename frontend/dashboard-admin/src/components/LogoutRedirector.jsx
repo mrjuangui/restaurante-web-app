@@ -5,11 +5,11 @@ const LogoutRedirector = ({ cerrarSesion }) => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    cerrarSesion();           // Borra el localStorage y actualiza estado
-    navigate("/");            // Redirige al inicio
+    cerrarSesion();
+    navigate("/");
   }, []);
 
-  return null; // No muestra nada en pantalla
+  return null;
 };
 
 export default LogoutRedirector;

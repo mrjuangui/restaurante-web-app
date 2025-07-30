@@ -8,7 +8,7 @@ const MisPedidos = () => {
     const fetchPedidos = async () => {
       const token = localStorage.getItem("token");
       try {
-        const res = await fetch("http://localhost:3000/api/pedidos", {
+        const res = await fetch("https://restaurante-backend-ilif.onrender.com/api/pedidos", {
           headers: { Authorization: `Bearer ${token}` },
         });
         const data = await res.json();
