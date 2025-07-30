@@ -13,19 +13,19 @@ Aplicación web full stack para un restaurante ficticio. Permite a los usuarios 
 ## 🧩 Tecnologías Utilizadas
 
 ### 🚀 Frontend
-- React 19 + Vite
-- React Router DOM 7
-- Axios
-- Tailwind CSS (para el diseño visual)
-- Chart.js + react-chartjs-2 (dashboard)
-- Bootstrap 5 (algunos estilos)
+
+- React con Vite
+- React Router + Axios
+- Componentes
+- UI con Bootstrap + CSS personalizado
 
 ### 🔐 Backend
-- Node.js + Express
+
+- Node.js + Express (ES module)
 - PostgreSQL
 - JWT para autenticación
-- Bcrypt para encriptación de contraseñas
-- Supabase (como proveedor de base de datos PostgreSQL)
+- Middleware
+- Rutas
 
 ### ☁️ Despliegue
 - **Frontend:** Vercel
@@ -145,6 +145,6 @@ npm run dev
 
 ## 🧑‍💻 Autor
 
-**Juan G. Perales**  
-[GitHub](https://github.com/mrjuangui)  
+**Juan G. Perales - Ingeniero de Sistemas**  
+[Portafolio](https://mrjuangui.github.io/landing-page/)  
 [LinkedIn](https://www.linkedin.com/in/mrjuangui)
