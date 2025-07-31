@@ -3,8 +3,14 @@
 
 Aplicación web full stack para un restaurante ficticio. Permite a los usuarios explorar el menú, hacer pedidos y a los administradores gestionar productos, pedidos y estadísticas.
 
-## 🌐 Demo en producción
+## 📌 Cuenta Administrador
 
+- **Correo Electrónico:** administrador1@gmail.com 
+- **Contraseña:** 150397
+
+---
+
+## 🌐 Demo en producción
 - **Frontend:** https://restaurante-frontend-seven.vercel.app  
 - **Backend (API):** https://restaurante-web-app-production.up.railway.app
 
