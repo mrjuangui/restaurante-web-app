@@ -19,7 +19,7 @@ const Login = ({ onLogin, setMensaje, setTipo }) => {
 
     // Limpiamos el mensaje de error antes de enviar
     try {
-      const res = await fetch("https://restaurante-web-app-production.up.railway.app/api/auth/iniciar-sesion", {
+      const res = await fetch("https://restaurante-backend-ilif.onrender.com/api/auth/iniciar-sesion", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ correo, clave }),

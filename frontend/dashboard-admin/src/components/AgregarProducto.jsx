@@ -14,7 +14,7 @@ const AgregarProducto = () => {
     const token = localStorage.getItem("token");
 
     try {
-      const res = await fetch("https://restaurante-web-app-production.up.railway.app/api/productos", {
+      const res = await fetch("https://restaurante-backend-ilif.onrender.com/api/productos", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -3,10 +3,17 @@
 
 Aplicación web full stack para un restaurante ficticio. Permite a los usuarios explorar el menú, hacer pedidos y a los administradores gestionar productos, pedidos y estadísticas.
 
+## 📌 Cuenta Administrador
+
+- **Correo Electrónico:** administrador1@gmail.com 
+- **Contraseña:** 150397
+
+---
+
 ## 🌐 Demo en producción
 
 - **Frontend:** https://restaurante-frontend-seven.vercel.app  
-- **Backend (API):** https://restaurante-web-app-production.up.railway.app
+- **Backend (API):** https://restaurante-web-app.onrender.com
 
 ---
 
@@ -22,16 +29,17 @@ Aplicación web full stack para un restaurante ficticio. Permite a los usuarios 
 ### 🔐 Backend
 
 - Node.js + Express (ES module)
-- PostgreSQL
+- PostgreSQL (gestionado con Supabase)
 - JWT para autenticación
 - Middleware
 - Rutas
 
 ### ☁️ Despliegue
-- **Frontend:** Vercel
-- **Backend:** Railway
-- **Base de Datos:** Supabase
-- **Imágenes:** Cloudinary (cargadas manualmente)
+
+- **Frontend:** Vercel  
+- **Backend:** Render  
+- **Base de Datos:** Supabase  
+- **Imágenes:** Cloudinary (cargadas manualmente)  
 
 ---
 
@@ -95,11 +103,11 @@ npm install
 npm run dev
 ```
 
-Asegúrate de configurar las variables de entorno correctamente:
+Configura el archivo .env con tus credenciales de Supabase:
 
-```env
-PORT=3000
-DATABASE_URL=postgresql://<usuario>:<clave>@<host>:<puerto>/<bd>
+```
+PORT=10000
+DATABASE_URL=postgresql://postgres.kkloflrueviijwmwknvl:[TU_PASSWORD]@aws-0-us-west-1.pooler.supabase.com:6543/postgres
 JWT_SECRET=una_clave_secreta_segura
 ```
 
@@ -117,8 +125,8 @@ npm run dev
 
 ### 🧠 Backend
 
-1. Se desplegó en **Railway.app**
-2. Se configuró la variable de entorno `DATABASE_URL` con la conexión a **Supabase** (direct connection).
+1. Se desplegó en **Render**
+2. Se configuró la variable de entorno `DATABASE_URL` con la conexión al pooler de **Supabase** (Transaction pooler).
 3. Comando de inicio:
    ```
    npm run start
@@ -140,6 +148,7 @@ npm run dev
 - Las imágenes de los productos fueron subidas manualmente a **Cloudinary** y se referencian por URL.
 - No se utiliza `.env` en el frontend; las URLs de la API están incrustadas en el código.
 - El sistema aún puede mejorarse para ser completamente responsive en dispositivos móviles.
+- La base de datos es gestionada por **Supabase**, lo que facilita el despliegue y elimina la necesidad de administrar PostgreSQL manualmente.
 
 ---
 

@@ -11,9 +11,9 @@ import usuariosRoutes from './routes/usuarios.js'; // Importar las rutas de usua
 
 dotenv.config();
 
-// Configuración de la base de datos
-const app = express();
-const PORT = process.env.PORT || 3000;
+  // Configuración de la base de datos
+  const app = express();
+  const PORT = process.env.PORT || 3000;
 
 // Middleware
 app.use(cors());
@@ -79,4 +79,5 @@ app.get('/api/usuarios', verificarToken, async (req, res) => {
 // Rutas de la API
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
+  console.log(`Servidor corriendo en puerto ${PORT}`)
 });
