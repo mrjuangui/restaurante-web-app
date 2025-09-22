@@ -1,12 +1,12 @@
 {
   "dependencies": {
+    "lucide-react": "^0.544.0",
     "react-icons": "^5.5.0"
   },
   "name": "restaurante-web-app",
   "version": "1.0.0",
   "description": "Aplicación web full stack para un restaurante ficticio. Permite a los usuarios explorar el menú, hacer pedidos y a los administradores gestionar productos, pedidos y estadísticas.",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
